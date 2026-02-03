@@ -5,125 +5,45 @@
 
 <style>
 
-/* ======= MAIN THEME ======= */
+/* ===== THEME ===== */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(135deg, #2c1810, #7b4a33);
+    font-family: 'Segoe UI', Arial;
+    background: #f1e6dd;
 }
 
-/* ======= HEADER ======= */
-header {
-    background: linear-gradient(to right, #4e2e20, #2c1810);
+/* ===== LEFT SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: linear-gradient(#4e2e20, #2c1810);
+    position: fixed;
     color: white;
     text-align: center;
-    padding: 35px 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    padding-top: 20px;
 }
 
-header h1 {
-    margin: 5px;
-    font-size: 34px;
+.sidebar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #c7a17a;
 }
 
-/* ======= CARD STYLE ======= */
-section {
-    background: rgba(255, 255, 255, 0.95);
-    margin: 20px auto;
-    padding: 22px;
-    border-radius: 14px;
-    box-shadow: 0 0 18px rgba(0,0,0,0.25);
-    width: 90%;
-    max-width: 1000px;
+.sidebar h2 {
+    margin: 10px;
 }
 
-/* ======= HEADINGS ======= */
-h2 {
-    color: #4e2e20;
-    border-left: 5px solid #7b4a33;
-    padding-left: 10px;
-}
-
-/* ======= LIST ======= */
-ul {
-    line-height: 1.95;
-    list-style: none;
-    padding-left: 10px;
-}
-
-li::before {
-    content: "▶ ";
-    color: #7b4a33;
-}
-
-/* ======= FOOTER ======= */
-footer {
-    text-align: center;
-    padding: 15px;
+.menu a {
+    display: block;
     color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px;
+    background: #7b4a33;
+    border-radius: 8px;
 }
 
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Saikiran Devalla</h1>
-<h3>SAP Production Planning & Quality Management Consultant</h3>
-<p>6 Years of Experience</p>
-</header>
-
-<section>
-<h2>Profile Summary</h2>
-<p>
-SAP PP & QM Functional Consultant with 6 years of experience in implementation and support.
-Expert in Production Planning, Quality Management, Master Data and integration with MM, SD, PM.
-</p>
-</section>
-
-<section>
-<h2>Professional Skills</h2>
-<ul>
-<li>Material Master, BOM, Routing, Work Center</li>
-<li>MRP, Production Orders, Capacity Planning</li>
-<li>Inspection Plan, MIC, Results Recording</li>
-<li>Batch & Serial Number Management</li>
-<li>PP-MM-QM Integration</li>
-<li>Support & Incident Handling</li>
-</ul>
-</section>
-
-<section>
-<h2>Project Experience</h2>
-
-<h3>Implementation Project</h3>
-<ul>
-<li>Configured PP and QM processes</li>
-<li>Created BOM and Routing</li>
-<li>MRP planning configuration</li>
-<li>Inspection during GR and Production</li>
-</ul>
-
-<h3>Support Project</h3>
-<ul>
-<li>Handled tickets in MD04, COHV, QA32</li>
-<li>Root cause analysis</li>
-<li>User training and support</li>
-</ul>
-
-</section>
-
-<section>
-<h2>Key Transactions</h2>
-<p>
-MD01, MD04, CO01, CO02, COHV, QA01, QA32, QE51N, CS01, CA01
-</p>
-</section>
-
-<footer>
-© 2025 Saikiran Devalla
-</footer>
-
-</body>
-</html>
+/* ===== RIGHT CONTENT ===== */
+.content {
+    margin-left: 27
