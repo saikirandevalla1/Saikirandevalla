@@ -1,33 +1,23 @@
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #3e2723, #6d4c41);
 }
 
+/* HEADER - GLOSSY EFFECT */
 header {
-    background-color: #0a66c2;
+    background: linear-gradient(to right, #5d4037, #3e2723);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
 
+/* GLASS CARD EFFECT */
 section {
-    background: white;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-h2 {
-    color: #0a66c2;
-}
-
-ul {
-    line-height: 1.8;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
+    background: rgba(255, 255, 255, 0.92);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    transition:
