@@ -32,11 +32,12 @@ body {
 
 .sidebar h2 {
     margin: 10px;
-    color: white;
+    color: white;          /* HIGH VISIBILITY */
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
 }
+
 
 .menu a {
     display: block;
@@ -46,10 +47,6 @@ body {
     margin: 8px;
     background: #7b4a33;
     border-radius: 8px;
-}
-
-.menu a:hover {
-    background: #c7a17a;
 }
 
 /* ===== RIGHT CONTENT ===== */
@@ -65,22 +62,6 @@ section {
     border-radius: 12px;
 }
 
-/* ===== TILES DESIGN ===== */
-.tiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.tile {
-    background: #fff7f2;
-    border-left: 4px solid #7b4a33;
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-}
-
 /* ===== HEADINGS ===== */
 h2 {
     color: #4e2e20;
@@ -88,6 +69,7 @@ h2 {
     padding-left: 8px;
 }
 
+/* ===== LIST ===== */
 ul {
     list-style: none;
 }
@@ -132,8 +114,7 @@ li::before {
 <a href="#profile">Profile</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#Key Acheivements">Key Acheivements</a>
-<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+<a href="#trans">Transactions</a>
 </div>
 
 </div>
@@ -144,4 +125,48 @@ li::before {
 <section id="profile">
 <h2>Profile Summary</h2>
 <p>
-SAP PP Consultant with nearly 4 years of experience in SAP R/3 and SAP S/4 HANA Production Planning. Skilled in configuring and supporting PP modules, handling production orders, B
+SAP PP & QM Consultant with 6 years of experience in implementation and support.
+Expert in Production Planning, Quality Management and integration with MM, SD, PM.
+</p>
+</section>
+
+<section id="skills">
+<h2>Professional Skills</h2>
+<ul>
+<li>Material Master, BOM, Routing</li>
+<li>MRP & Production Orders</li>
+<li>Inspection Plan & Results Recording</li>
+<li>Batch & Serial Number</li>
+<li>PP-MM-QM Integration</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>Project Experience</h2>
+
+<h3>Implementation</h3>
+<ul>
+<li>Configured PP & QM processes</li>
+<li>MRP planning setup</li>
+<li>Inspection during GR</li>
+</ul>
+
+<h3>Support</h3>
+<ul>
+<li>Tickets MD04, QA32</li>
+<li>Root cause analysis</li>
+</ul>
+
+</section>
+
+<section id="trans">
+<h2>Key Transactions</h2>
+<p>
+MD01, MD04, CO01, CO02, QA32, QE51N
+</p>
+</section>
+
+</div>
+
+</body>
+</html>
