@@ -32,12 +32,11 @@ body {
 
 .sidebar h2 {
     margin: 10px;
-    color: white;          /* HIGH VISIBILITY */
+    color: white;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 
 .menu a {
     display: block;
@@ -47,6 +46,10 @@ body {
     margin: 8px;
     background: #7b4a33;
     border-radius: 8px;
+}
+
+.menu a:hover {
+    background: #c7a17a;
 }
 
 /* ===== RIGHT CONTENT ===== */
@@ -62,6 +65,22 @@ section {
     border-radius: 12px;
 }
 
+/* ===== TILES DESIGN ===== */
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.tile {
+    background: #fff7f2;
+    border-left: 4px solid #7b4a33;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
 /* ===== HEADINGS ===== */
 h2 {
     color: #4e2e20;
@@ -69,7 +88,6 @@ h2 {
     padding-left: 8px;
 }
 
-/* ===== LIST ===== */
 ul {
     list-style: none;
 }
@@ -113,9 +131,9 @@ li::before {
 <div class="menu">
 <a href="#profile">Profile</a>
 <a href="#skills">Skills</a>
-<a href="#Professional Experienance">Professional Experienance</a>
 <a href="#projects">Projects</a>
 <a href="#Key Acheivements">Key Acheivements</a>
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
 </div>
 
 </div>
@@ -126,52 +144,4 @@ li::before {
 <section id="profile">
 <h2>Profile Summary</h2>
 <p>
-SAP PP Consultant with nearly 4 years of experience in SAP R/3 and SAP S/4 HANA Production Planning. Skilled in configuring and supporting PP modules, handling production orders, BOMs, routings, and work centers. Expertise in MRP strategies (Make-to-Stock & Make-to-Order), variant configuration, and batch management. Strong experience in end-to-end implementation, support, data migration (LSMW), and integration with MM, SD, QM, and PM. Excellent problem-solving, analytical, and communication skills with proven success in client collaboration and user training.
-</p>
-</section>
-
-<section id="skills">
-<h2>Professional Skills</h2>
-<ul>
-<li>Configuration of production orders, BOMs (variants/alternate/multi-level), routings, work centers, and capacity planning.</li>
-<li>Expertise in MRP processes with different MRP types to ensure material availability.</li>
-<li>Proficient in batch management configuration at material and plant level.</li>
-<li>Experience in data migration using LSMW.</li>
-<li>Knowledge of integration with MM, SD, QM, and PM modules.</li>
-<li>Secondary: SAP Quality Management (QM)</li>
-<li>Inspection planning, quality notifications, and control processes.</li>
-<li>Managed inspection processes for incoming materials and finished goods.</li>
-<li>Designed and implemented quality control labels as per industry standards.</li>
-<li>Other Tools & Software: SAP ECC, SAP S/4 HANA, SolidWorks, MS Office (Excel, Word, PowerPoint)</li>
-</ul>
-</section>
-
-<section id="projects">
-<h2>Project Experience</h2>
-
-<h3>Implementation</h3>
-<ul>
-<li>American Air Filters Pvt Ltd (Manufacturing, SAP S/4 HANA 2021)</li>
-<li>American Air Filters Saudi Arabia (Manufacturing, SAP S/4 HANA 2021)</li>
-</ul>
-
-<h3>Support</h3>
-<ul>
-<li>Vishnu chemicals (Manufacturing, SAP S/4 HANA 2022)</li>
-<li>Astra Micro Wave Ltd (Manufacturing, SAP ECC)</li>
-<li>WINC, Australia (Sales & Marketing, SAP ECC)</li>
-</ul>
-
-</section>
-
-<section id="Key Acheivements">
-<h2>Key Acheivements</h2>
-<p>
-Indian Railways, Hyderabad – Project: Maintenance of Diesel Locomotives.
-</p>
-</section>
-
-</div>
-
-</body>
-</html>
+SAP PP Consultant with nearly 4 years of experience in SAP R/3 and SAP S/4 HANA Production Planning. Skilled in configuring and supporting PP modules, handling production orders, B
