@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,6 +40,7 @@ font-weight:500;
 .profile{
 display:flex;
 align-items:center;
+justify-content:space-between;
 gap:25px;
 padding:30px;
 background:white;
@@ -48,10 +49,23 @@ border-radius:10px;
 box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
-.profile img{
+.profile-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.profile-left img{
 width:120px;
 height:120px;
 border-radius:50%;
+}
+
+/* SAP LOGO */
+
+.sap-logo img{
+width:350px;
+max-width:100%;
 }
 
 /* GRID TILES */
@@ -62,8 +76,6 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
 padding:20px;
 }
-
-/* FIORI TILE */
 
 .tile{
 background:white;
@@ -125,7 +137,9 @@ color:#666;
 
 <div class="profile">
 
-<img src="profile.jpg">
+<div class="profile-left">
+
+<img src="profile.jpg" alt="Profile">
 
 <div>
 <h2>Saikiran Devalla</h2>
@@ -135,6 +149,12 @@ color:#666;
 Download Resume
 </a>
 
+</div>
+
+</div>
+
+<div class="sap-logo">
+<img src="sap-s4hana.png" alt="SAP S4HANA Logo">
 </div>
 
 </div>
@@ -151,44 +171,5 @@ Production Orders, BOM, Routings, Work Centers and Capacity Planning configurati
 <div class="tile">
 <h3>MRP</h3>
 <p>
-Material Requirement Planning, MTS/MTO strategies, availability checks and scheduling.
-</p>
-</div>
-
-<div class="tile">
-<h3>Quality Management</h3>
-<p>
-Inspection plans, notifications, results recording and quality process integration.
-</p>
-</div>
-
-<div class="tile">
-<h3>Integration</h3>
-<p>
-End-to-end process integration with MM, SD and PM modules.
-</p>
-</div>
-
-<div class="tile">
-<h3>S/4HANA Implementation</h3>
-<p>
-Full lifecycle implementation and go-live support for manufacturing clients.
-</p>
-</div>
-
-<div class="tile">
-<h3>Data Migration</h3>
-<p>
-LSMW, master data preparation and cutover activities.
-</p>
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 Saikiran Devalla | SAP PP QM Consultant
-</div>
-
-</body>
-</html>
+Material Requirement Planning, MTS/MTO
 ```
