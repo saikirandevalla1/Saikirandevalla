@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 body{
 margin:0;
 font-family:"Segoe UI",Arial;
-background:#f5f6f7;
+background:#eef2f6;
 }
 
 /* HEADER */
@@ -39,7 +40,7 @@ background:white;
 margin:20px;
 padding:30px;
 border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.08);
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 .profile-left{
@@ -70,6 +71,29 @@ display:inline-block;
 margin-top:10px;
 }
 
+/* KPI CARDS */
+
+.kpi{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.kpi-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.kpi-number{
+font-size:28px;
+color:#0a6ed1;
+font-weight:bold;
+}
+
 /* DASHBOARD TILES */
 
 .tiles{
@@ -97,35 +121,37 @@ color:#0a6ed1;
 margin-top:0;
 }
 
-/* SKILL BARS */
+/* POWER BI STYLE SKILLS */
 
 .skills{
-background:white;
+background:#1f2a36;
 margin:20px;
-padding:20px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+color:white;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
 .skill{
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
-.skill-name{
-font-weight:600;
-margin-bottom:5px;
+.skill-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:6px;
 }
 
 .skill-bar{
-background:#ddd;
+background:#555;
 border-radius:6px;
+height:10px;
 overflow:hidden;
 }
 
-.skill-progress{
+.skill-fill{
 height:10px;
-background:#0a6ed1;
-width:0;
+background:#4CAF50;
 }
 
 /* TIMELINE */
@@ -140,7 +166,7 @@ box-shadow:0 3px 8px rgba(0,0,0,0.1);
 
 .timeline-item{
 margin-bottom:20px;
-border-left:3px solid #0a6ed1;
+border-left:4px solid #0a6ed1;
 padding-left:15px;
 }
 
@@ -148,169 +174,5 @@ padding-left:15px;
 
 .contact{
 position:fixed;
-bottom:20px;
-right:20px;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.contact a{
-background:#0a6ed1;
-color:white;
-padding:12px;
-border-radius:50%;
-text-align:center;
-font-size:18px;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.footer{
-text-align:center;
-padding:20px;
-color:#666;
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="header">
-<h2>SAP Consultant Portfolio</h2>
-
-<div>
-<a href="#">Skills</a>
-<a href="#">Projects</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-</div>
-</div>
-
-<div class="profile">
-
-<div class="profile-left">
-
-<img src="profile.jpg">
-
-<div>
-<h2>Saikiran Devalla</h2>
-<p>SAP PP & QM Consultant | SAP ECC | SAP S/4HANA</p>
-
-<a class="button" href="Saikiran_Devalla_Resume_2026.pdf" download>
-Download Resume
-</a>
-
-</div>
-
-</div>
-
-<div class="sap-logo">
-<img src="sap-s4hana.png">
-</div>
-
-</div>
-
-<!-- DASHBOARD TILES -->
-
-<div class="tiles">
-
-<div class="tile">
-<h3>Production Planning</h3>
-<p>Production Orders, BOM, Routings, Work Centers and Capacity Planning configuration.</p>
-</div>
-
-<div class="tile">
-<h3>MRP</h3>
-<p>Material Requirement Planning, MTS/MTO strategies, availability checks and scheduling.</p>
-</div>
-
-<div class="tile">
-<h3>Quality Management</h3>
-<p>Inspection plans, notifications, results recording and quality process integration.</p>
-</div>
-
-<div class="tile">
-<h3>Integration</h3>
-<p>End-to-end process integration with MM, SD and PM modules.</p>
-</div>
-
-<div class="tile">
-<h3>S/4HANA Implementation</h3>
-<p>Full lifecycle implementation and go-live support for manufacturing clients.</p>
-</div>
-
-<div class="tile">
-<h3>Data Migration</h3>
-<p>LSMW, master data preparation and cutover activities.</p>
-</div>
-
-</div>
-
-<!-- SKILL BARS -->
-
-<div class="skills">
-
-<h2>SAP Skills</h2>
-
-<div class="skill">
-<div class="skill-name">SAP PP</div>
-<div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">SAP QM</div>
-<div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">MRP</div>
-<div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
-</div>
-
-<div class="skill">
-<div class="skill-name">Variant Configuration</div>
-<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
-</div>
-
-</div>
-
-<!-- PROJECT TIMELINE -->
-
-<div class="timeline">
-
-<h2>Project Experience</h2>
-
-<div class="timeline-item">
-<h3>American Air Filters Pvt Ltd</h3>
-<p>SAP S/4 HANA 2021 Implementation</p>
-</div>
-
-<div class="timeline-item">
-<h3>Manufacturing Industry Projects</h3>
-<p>Production Planning & Quality Management Implementation</p>
-</div>
-
-</div>
-
-<!-- CONTACT BUTTONS -->
-
-<div class="contact">
-
-<a href="https://linkedin.com" target="_blank">in</a>
-
-<a href="https://wa.me/917780733087" class="whatsapp" target="_blank">W</a>
-
-</div>
-
-<div class="footer">
-© 2026 Saikiran Devalla | SAP PP QM Consultant
-</div>
-
-</body>
-</html>
+bo
 ```
