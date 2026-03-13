@@ -1,63 +1,269 @@
-<!-- POWER BI STYLE SKILLS DASHBOARD -->
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saikiran Devalla | SAP PP QM Consultant</title>
 
-<div class="skills-dashboard">
+<style>
 
-<h2>SAP Skills Dashboard</h2>
+body{
+margin:0;
+font-family:"Segoe UI",Arial;
+background:#f5f6f7;
+}
 
-<div class="skill-card">
+/* HEADER */
 
-<div class="skill-header">
-<span>SAP PP</span>
-<span>90%</span>
+.header{
+background:#0a6ed1;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+
+.header a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+/* PROFILE SECTION */
+
+.profile{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:30px;
+background:white;
+margin:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+.profile-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.profile-left img{
+width:120px;
+height:120px;
+border-radius:50%;
+}
+
+/* SAP LOGO */
+
+.sap-logo img{
+width:350px;
+}
+
+/* BUTTON */
+
+.button{
+background:#0a6ed1;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+/* GRID TILES */
+
+.tiles{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+padding:20px;
+}
+
+/* TILE */
+
+.tile{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+position:relative;
+height:220px;
+}
+
+.tile:hover{
+transform:translateY(-5px);
+}
+
+.tile h3{
+color:#0a6ed1;
+}
+
+/* FLIP CARD */
+
+.flip-card{
+perspective:1000px;
+}
+
+.flip-card-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform 0.8s;
+transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+top:0;
+left:0;
+}
+
+.flip-card-back{
+transform:rotateY(180deg);
+font-size:14px;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:20px;
+color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>SAP Consultant Portfolio</h2>
+
+<div>
+<a href="#">Skills</a>
+<a href="#">Projects</a>
+<a href="#">LinkedIn</a>
+</div>
 </div>
 
-<div class="skill-bar">
-<div class="skill-fill pp"></div>
-</div>
+<div class="profile">
 
-</div>
+<div class="profile-left">
 
+<img src="profile.jpg">
 
-<div class="skill-card">
+<div>
+<h2>Saikiran Devalla</h2>
+<p>SAP PP & QM Consultant | SAP ECC | SAP S/4HANA</p>
 
-<div class="skill-header">
-<span>SAP QM</span>
-<span>85%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill qm"></div>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<div class="skill-header">
-<span>MRP</span>
-<span>80%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill mrp"></div>
-</div>
-
-</div>
-
-
-<div class="skill-card">
-
-<div class="skill-header">
-<span>Variant Configuration</span>
-<span>75%</span>
-</div>
-
-<div class="skill-bar">
-<div class="skill-fill vc"></div>
-</div>
+<a class="button" href="Saikiran_Devalla_Resume_2026.pdf" download>
+Download Resume
+</a>
 
 </div>
 
 </div>
+
+<div class="sap-logo">
+<img src="sap-s4hana.png">
+</div>
+
+</div>
+
+<div class="tiles">
+
+<!-- FLIP TILE -->
+
+<div class="tile flip-card">
+
+<div class="flip-card-inner">
+
+<div class="flip-card-front">
+
+<h3>Production Planning</h3>
+
+<p>
+Production Orders, BOM, Routings, Work Centers and Capacity Planning configuration.
+</p>
+
+</div>
+
+<div class="flip-card-back">
+
+<h3>SAP S/4 HANA Implementation</h3>
+
+<p><b>American Air Filters Pvt Ltd</b></p>
+
+<ul>
+<li>Gathered business requirements and prepared Business Blueprint</li>
+<li>Configured material master, work centers, routings and BOMs</li>
+<li>Managed variant configuration and super BOM</li>
+<li>Configured MRP processes</li>
+<li>Data migration using LSMW</li>
+<li>Testing and Go-Live support</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OTHER TILES -->
+
+<div class="tile">
+<h3>MRP</h3>
+<p>
+Material Requirement Planning, MTS/MTO strategies, availability checks and scheduling.
+</p>
+</div>
+
+<div class="tile">
+<h3>Quality Management</h3>
+<p>
+Inspection plans, notifications, results recording and quality process integration.
+</p>
+</div>
+
+<div class="tile">
+<h3>Integration</h3>
+<p>
+End-to-end process integration with MM, SD and PM modules.
+</p>
+</div>
+
+<div class="tile">
+<h3>S/4HANA Implementation</h3>
+<p>
+Full lifecycle implementation and go-live support for manufacturing clients.
+</p>
+</div>
+
+<div class="tile">
+<h3>Data Migration</h3>
+<p>
+LSMW, master data preparation and cutover activities.
+</p>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Saikiran Devalla | SAP PP QM Consultant
+</div>
+
+</body>
+</html>
 ```
