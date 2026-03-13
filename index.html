@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,32 +21,32 @@ padding:15px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 
 .header a{
 color:white;
 text-decoration:none;
 margin-left:20px;
+font-weight:500;
 }
 
-/* PROFILE SECTION */
+/* PROFILE */
 
 .profile{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:30px;
+align-items:center;
 background:white;
 margin:20px;
+padding:30px;
 border-radius:10px;
 box-shadow:0 3px 8px rgba(0,0,0,0.08);
 }
 
 .profile-left{
 display:flex;
-align-items:center;
 gap:20px;
+align-items:center;
 }
 
 .profile-left img{
@@ -54,10 +55,8 @@ height:120px;
 border-radius:50%;
 }
 
-/* SAP LOGO */
-
 .sap-logo img{
-width:350px;
+width:300px;
 }
 
 /* BUTTON */
@@ -72,7 +71,7 @@ display:inline-block;
 margin-top:10px;
 }
 
-/* GRID TILES */
+/* DASHBOARD TILES */
 
 .tiles{
 display:grid;
@@ -81,70 +80,96 @@ gap:20px;
 padding:20px;
 }
 
-/* NORMAL TILE */
-
 .tile{
 background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 3px 8px rgba(0,0,0,0.1);
-transition:0.3s;
+transition:.3s;
 }
 
 .tile:hover{
 transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 .tile h3{
 color:#0a6ed1;
+margin-top:0;
 }
 
-/* FLIP CARD */
+/* SKILL BARS */
 
-.flip-card{
-background:transparent;
-height:240px;
-perspective:1000px;
+.skills{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-.flip-card-inner{
-position:relative;
-width:100%;
-height:100%;
-transition:transform 0.8s;
-transform-style:preserve-3d;
+.skill{
+margin-bottom:15px;
 }
 
-.flip-card:hover .flip-card-inner{
-transform:rotateY(180deg);
+.skill-name{
+font-weight:600;
+margin-bottom:5px;
 }
 
-.flip-card-front,
-.flip-card-back{
-position:absolute;
-width:100%;
-height:100%;
-backface-visibility:hidden;
+.skill-bar{
+background:#ddd;
+border-radius:6px;
+overflow:hidden;
+}
+
+.skill-progress{
+height:10px;
+background:#0a6ed1;
+width:0;
+}
+
+/* TIMELINE */
+
+.timeline{
+margin:20px;
+padding:20px;
 background:white;
 border-radius:10px;
 box-shadow:0 3px 8px rgba(0,0,0,0.1);
-padding:20px;
 }
 
-.flip-card-front h3{
-color:#0a6ed1;
+.timeline-item{
+margin-bottom:20px;
+border-left:3px solid #0a6ed1;
+padding-left:15px;
 }
 
-.flip-card-back{
-transform:rotateY(180deg);
-font-size:14px;
+/* CONTACT BUTTONS */
+
+.contact{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
 }
 
-.flip-card-back ul{
-padding-left:18px;
+.contact a{
+background:#0a6ed1;
+color:white;
+padding:12px;
+border-radius:50%;
+text-align:center;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* FOOTER */
+.whatsapp{
+background:#25D366;
+}
 
 .footer{
 text-align:center;
@@ -163,7 +188,7 @@ color:#666;
 <div>
 <a href="#">Skills</a>
 <a href="#">Projects</a>
-<a href="#">LinkedIn</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
 </div>
 </div>
 
@@ -191,71 +216,95 @@ Download Resume
 
 </div>
 
+<!-- DASHBOARD TILES -->
+
 <div class="tiles">
 
-<!-- FLIP TILE -->
-
-<div class="flip-card">
-<div class="flip-card-inner">
-
-<div class="flip-card-front">
-
+<div class="tile">
 <h3>Production Planning</h3>
-
-<p>
-Production Orders, BOM, Routings, Work Centers and Capacity Planning configuration.
-</p>
-
+<p>Production Orders, BOM, Routings, Work Centers and Capacity Planning configuration.</p>
 </div>
-
-<div class="flip-card-back">
-
-<h3>SAP S/4 HANA Implementation</h3>
-
-<p><b>American Air Filters Pvt Ltd</b></p>
-</ul>
-
-</div>
-
-</div>
-</div>
-
-<!-- OTHER TILES -->
 
 <div class="tile">
 <h3>MRP</h3>
-<p>
-Material Requirement Planning, MTS/MTO strategies, availability checks and scheduling.
-</p>
+<p>Material Requirement Planning, MTS/MTO strategies, availability checks and scheduling.</p>
 </div>
 
 <div class="tile">
 <h3>Quality Management</h3>
-<p>
-Inspection plans, notifications, results recording and quality process integration.
-</p>
+<p>Inspection plans, notifications, results recording and quality process integration.</p>
 </div>
 
 <div class="tile">
 <h3>Integration</h3>
-<p>
-End-to-end process integration with MM, SD and PM modules.
-</p>
+<p>End-to-end process integration with MM, SD and PM modules.</p>
 </div>
 
 <div class="tile">
 <h3>S/4HANA Implementation</h3>
-<p>
-Full lifecycle implementation and go-live support for manufacturing clients.
-</p>
+<p>Full lifecycle implementation and go-live support for manufacturing clients.</p>
 </div>
 
 <div class="tile">
 <h3>Data Migration</h3>
-<p>
-LSMW, master data preparation and cutover activities.
-</p>
+<p>LSMW, master data preparation and cutover activities.</p>
 </div>
+
+</div>
+
+<!-- SKILL BARS -->
+
+<div class="skills">
+
+<h2>SAP Skills</h2>
+
+<div class="skill">
+<div class="skill-name">SAP PP</div>
+<div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">SAP QM</div>
+<div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">MRP</div>
+<div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Variant Configuration</div>
+<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+</div>
+
+</div>
+
+<!-- PROJECT TIMELINE -->
+
+<div class="timeline">
+
+<h2>Project Experience</h2>
+
+<div class="timeline-item">
+<h3>American Air Filters Pvt Ltd</h3>
+<p>SAP S/4 HANA 2021 Implementation</p>
+</div>
+
+<div class="timeline-item">
+<h3>Manufacturing Industry Projects</h3>
+<p>Production Planning & Quality Management Implementation</p>
+</div>
+
+</div>
+
+<!-- CONTACT BUTTONS -->
+
+<div class="contact">
+
+<a href="https://linkedin.com" target="_blank">in</a>
+
+<a href="https://wa.me/917780733087" class="whatsapp" target="_blank">W</a>
 
 </div>
 
